@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Travel Planer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <header>
+        
+        <p>Travel Planer</p>
+        <div class="meni">
+            <a href="pocetna.html">Почетна</a>
+            <a href="destinacii.html">Дестинации</a>
+            <a href="galerija.html">Галерија</a>
+            <a href="anketa.html">Анкета</a>
+            <a href="najava.html">Најава</a>
+        </div>
+    </header>
+
+    <hr>
+
+   
+
+<div class="mojidestinacii">
+    <h2>Мои дестинации</h2>
+
+    <div id="listaDestinacii">
+    </div>
+
+    <button onclick="otvoriProzorec()">+ Додај дестинација</button>
+</div>
+
+<div id="prozor" class="prozor">
+    <div class="sodrzina">
+        <h2>Одбери дестинации</h2>
+
+        <label>
+            <input type="checkbox" value="Барселона 30000ден">
+            Барселона 30000ден
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" value="Сплит 25000ден">
+            Сплит 25000ден
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" value="Рим 20000ден">
+            Рим 20000ден
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" value="Прага 18000ден">
+            Прага 18000ден
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" value="Виена 28000ден">
+            Виена 28000ден
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" value="Истанбул 15000ден">
+            Истанбул 15000ден
+        </label>
+
+        <br><br>
+
+        <button onclick="dodadiDestinacii()">Додај</button>
+        <button onclick="zatvoriProzorec()">Откажи</button>
+    </div>
+</div>
+
+
+<div class="buget">
+    <h2>Пронајди дестинација според твојот буџет</h2>
+
+    <label for="pari">Внеси го твојот буџет во денари:</label>
+
+    <input type="number" id="pari" placeholder="Пример: 20000">
+
+    <button onclick="pronajdiDestinacii()">Пронајди дестинации</button>
+</div>
+
+
+<div id="prozorBuget" class="prozor">
+    <div class="sodrzina">
+
+        <h2>Дестинации според твојот буџет</h2>
+
+        <div id="rezultati"></div>
+
+        <br>
+
+        <button onclick="zatvoriBuget()">Затвори</button>
+
+    </div>
+</div>
+
+
+<div class="kategorii">
+
+    <h2>Одбери дестинација според категорија</h2>
+
+    <label for="leto">Лето</label>
+    <input type="radio" id="leto" name="sezona" value="leto" onchange="pronajdiKategorija()">
+
+    <label for="zima">Зима</label>
+    <input type="radio" id="zima" name="sezona" value="zima" onchange="pronajdiKategorija()">
+
+</div>
+
+
+<div id="prozorKategorija" class="prozor">
+
+    <div class="sodrzina">
+
+        <h2>Дестинации според категорија</h2>
+
+        <div id="rezultatiKategorija"></div>
+
+        <br>
+
+        <button onclick="zatvoriKategorija()">Затвори</button>
+
+    </div>
+
+</div>
+
+    <hr>
+
+        <footer>
+            <p> © 2026 Travel Planner</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

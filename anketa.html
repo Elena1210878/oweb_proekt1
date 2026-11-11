@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Travel Planer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <header>
+        
+        <p>Travel Planer</p>
+        <div class="meni">
+            <a href="pocetna.html">Почетна</a>
+            <a href="destinacii.html">Дестинации</a>
+            <a href="galerija.html">Галерија</a>
+            <a href="anketa.html">Анкета</a>
+            <a href="najava.html">Најава</a>
+        </div>
+    </header>
+
+    <hr>
+
+    <main class="anketa">
+
+        <h1>Вашето мислење ни е важно!</h1>
+
+        <p class="opis-anketa">
+            Одговорете на неколку прашања и помогнете ни да го подобриме
+            Travel Planner порталот.
+        </p>
+
+        <form>
+
+            <fieldset>
+                <legend>Основни информации</legend>
+
+                <label for="ime">Име и презиме:</label>
+                <input type="text" id="ime" name="ime"
+                       placeholder="Внесете име и презиме" required>
+
+                <label for="email">Е-пошта:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Внесете е-пошта" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Вашето мислење за страницата</legend>
+
+                <p>1. Колку сте задоволни од веб-страницата?</p>
+
+                <input type="radio" id="odlicno" name="zadovolstvo" value="Одлично" required>
+                <label for="odlicno">Одлично</label><br>
+
+                <input type="radio" id="dobro" name="zadovolstvo" value="Добро">
+                <label for="dobro">Добро</label><br>
+
+                <input type="radio" id="prosecno" name="zadovolstvo" value="Просечно">
+                <label for="prosecno">Просечно</label><br>
+
+                <input type="radio" id="loso" name="zadovolstvo" value="Лошо">
+                <label for="loso">Лошо</label>
+
+                <p>2. Кои делови од страницата ви се најинтересни?</p>
+
+                <input type="checkbox" id="destinacii" name="delovi" value="Дестинации">
+                <label for="destinacii">Дестинации</label><br>
+
+                <input type="checkbox" id="galerija" name="delovi" value="Галерија">
+                <label for="galerija">Галерија</label><br>
+
+                <input type="checkbox" id="blog" name="delovi" value="Блог">
+                <label for="blog">Блог и водичи</label><br>
+
+                <input type="checkbox" id="trosoci" name="delovi" value="Пресметка на трошоци">
+                <label for="trosoci">Пресметка на патни трошоци</label>
+
+          
+
+                <p>4. Дали би ја препорачале страницата на вашите пријатели?</p>
+
+                <input type="radio" id="da" name="preporaka" value="Да" required>
+                <label for="da">Да</label><br>
+
+                <input type="radio" id="mozebi" name="preporaka" value="Можеби">
+                <label for="mozebi">Можеби</label><br>
+
+                <input type="radio" id="ne" name="preporaka" value="Не">
+                <label for="ne">Не</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Дополнителни забелешки</legend>
+
+                <label for="komentar">
+                    5. Што би промениле или додале на страницата?
+                </label>
+
+                <textarea id="komentar" name="komentar" rows="5"
+                          placeholder="Напишете го вашето мислење..."></textarea>
+
+            </fieldset>
+
+            <button type="submit">Испрати анкета</button>
+            <button type="reset">Избриши одговори</button>
+
+
+            <div id="poraka" class="poraka" style="display:none;">
+    <h2>Ви благодариме!</h2>
+    <p>Анкетата е успешно испратена.</p>
+</div>
+
+        </form>
+
+    </main>
+<hr>
+
+        <footer>
+            <p> © 2026 Travel Planner</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
